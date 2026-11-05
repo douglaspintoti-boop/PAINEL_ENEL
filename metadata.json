@@ -1,0 +1,6 @@
+{
+  "name": "Painel Obras Leste - Enel Brasil",
+  "description": "Tela de login e sistema de gestão operacional para o Painel Obras Leste da Enel Brasil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

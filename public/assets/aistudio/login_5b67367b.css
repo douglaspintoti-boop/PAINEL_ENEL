@@ -1,0 +1,90 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    /* Ajustes para o body para que o rodapé fique embaixo */
+    display: flex; /* Mantém flex para centralizar o container de login */
+    flex-direction: column; /* Organiza os itens (container de login e rodapé) em coluna */
+    justify-content: space-between; /* Empurra o rodapé para o final e o container para o centro */
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /* Adicionado flex-shrink para que ele não encolha e force o rodapé para cima */
+    flex-shrink: 0; 
+    margin: auto 0; /* Centraliza verticalmente o container de login, se sobrar espaço */
+}
+
+.login-logo {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #032775;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #5a946f;
+}
+
+.error-message {
+    color: #c82333;
+    margin-top: 15px;
+    height: 20px;
+    font-weight: bold;
+}
+
+/* --- ESTILOS PARA O RODAPÉ (ajustados para a página de login) --- */
+.site-footer {
+    text-align: center;
+    margin-top: 30px; /* Reduzi um pouco a margem superior para o rodapé */
+    padding: 20px; /* Adicionei padding no rodapé para um espaçamento geral */
+    /* Removi a borda superior para um visual mais limpo na página de login */
+    /* border-top: 1px solid #e0e0e0; */
+    color: #888;
+    font-size: 0.9em;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    /* Adicionei background-color para ter uma área mais definida, opcional */
+    /* background-color: #f9f9f9; */
+    flex-shrink: 0; /* Garante que o rodapé não encolha */
+}
