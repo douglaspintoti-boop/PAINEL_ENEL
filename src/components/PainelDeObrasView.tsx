@@ -13,7 +13,7 @@ export default function PainelDeObrasView({ onLogout }: PainelDeObrasViewProps) 
       <header className="h-14 bg-white border-b border-slate-200 px-4 sm:px-6 flex items-center justify-between shrink-0 shadow-xs z-20">
         <div className="flex items-center gap-3 sm:gap-4">
           <img
-            src="/assets/aistudio/logo_enel_06efd94a.png"
+            src={`${import.meta.env.BASE_URL}assets/aistudio/logo_enel_06efd94a.png`}
             alt="Enel Brasil"
             className="h-7 sm:h-8 object-contain"
             referrerPolicy="no-referrer"
@@ -49,7 +49,7 @@ export default function PainelDeObrasView({ onLogout }: PainelDeObrasViewProps) 
       {/* Embedded Painel de Obras (programação de obras with filters, KPIs, and card list) */}
       <main className="flex-1 w-full h-[calc(100vh-56px)] overflow-hidden relative">
         <iframe
-          src="/painel.html"
+          src={`${import.meta.env.BASE_URL}painel.html`}
           title="Programação e Painel de Obras"
           className="w-full h-full border-0"
         />

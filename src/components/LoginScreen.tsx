@@ -48,7 +48,7 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
       <header className="w-full max-w-4xl flex items-center justify-between py-2">
         <div className="flex items-center gap-3">
           <img
-            src="/assets/aistudio/logo_enel_06efd94a.png"
+            src={`${import.meta.env.BASE_URL}assets/aistudio/logo_enel_06efd94a.png`}
             alt="Enel Brasil"
             className="h-9 object-contain"
             referrerPolicy="no-referrer"
@@ -79,7 +79,7 @@ export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
               <div className="text-center mb-6">
                 <div className="p-2 bg-slate-50 rounded-xl border border-slate-100 inline-block mb-3 shadow-inner">
                   <img
-                    src="/assets/aistudio/logo_painel_efdda814.png"
+                    src={`${import.meta.env.BASE_URL}assets/aistudio/logo_painel_efdda814.png`}
                     alt="Painel Obras Leste"
                     className="max-h-20 w-auto object-contain mx-auto"
                     referrerPolicy="no-referrer"
